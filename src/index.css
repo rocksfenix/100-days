@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --color-ink: #070706;
+  --color-gold: #e8c36a;
+  --color-gold-soft: #f3d48a;
+  --color-cream: #f4ecdc;
+  --color-stone: #9a9180;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ink);
+  color: var(--color-cream);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes orb-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(6%, -8%, 0) scale(1.08);
+  }
+}
+
+@keyframes orb-drift-alt {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-8%, 6%, 0) scale(1.12);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.orb-a {
+  animation: orb-drift 18s ease-in-out infinite;
+}
+
+.orb-b {
+  animation: orb-drift-alt 22s ease-in-out infinite;
+}
+
+.enter {
+  animation: fade-up 0.8s ease-out both;
+}
+
+.enter-delay-1 {
+  animation-delay: 0.08s;
+}
+
+.enter-delay-2 {
+  animation-delay: 0.16s;
+}
+
+.enter-delay-3 {
+  animation-delay: 0.24s;
+}
+
+.enter-delay-4 {
+  animation-delay: 0.32s;
+}
