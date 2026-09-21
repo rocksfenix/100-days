@@ -57,8 +57,8 @@ export function CountdownPage() {
             Cien días.
           </h1>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-stone sm:text-base">
-            Una cuenta atrás anclada al 14 de septiembre a las 00:00. Cada recarga
-            muestra el tiempo exacto.
+            Una cuenta atrás anclada al 22 de septiembre a las 00:00. Cien días
+            hasta que termine el año.
           </p>
         </header>
 

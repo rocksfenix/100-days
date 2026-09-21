@@ -1,4 +1,4 @@
-export const CHALLENGE_START = new Date('2026-09-14T00:00:00-06:00')
+export const CHALLENGE_START = new Date('2026-09-22T00:00:00-06:00')
 export const CHALLENGE_DAYS = 100
 export const CHALLENGE_MS = CHALLENGE_DAYS * 24 * 60 * 60 * 1000
 export const CHALLENGE_END = new Date(CHALLENGE_START.getTime() + CHALLENGE_MS)
